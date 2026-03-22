@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location Selector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="selector-card">
+        <p class="eyebrow">Mini Project</p>
+        <h1>Smart Location Selector</h1>
+        <p class="intro">
+          Pick the kind of place you are in the mood for and get clickable
+          suggestions you can track in your history.
+        </p>
+
+        <div class="controls">
+          <label class="field">
+            <span>Location type</span>
+            <select id="locationSelect">
+              <option value="">-- Choose type --</option>
+              <option value="all">All</option>
+              <option value="fun">Fun</option>
+              <option value="productive">Productive</option>
+            </select>
+          </label>
+
+          <button id="suggestBtn">Suggest Location</button>
+        </div>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Suggestions</h2>
+            <p>Click a location to save it in your history.</p>
+          </div>
+          <div id="locationsContainer" class="locations-grid"></div>
+        </section>
+
+        <section class="panel history-panel">
+          <div class="panel-heading">
+            <h2>History</h2>
+            <p>Click a history item to remove it.</p>
+          </div>
+          <ul id="historyList" class="history-list"></ul>
+        </section>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
